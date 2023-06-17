@@ -5,7 +5,7 @@ var User = require('../models/User');
 
 router.get('/read', function (req, res, next) {
   User.find({}).then(function (users) {
-    res.send(users);
+    res.json( users);
   });
 });
 
